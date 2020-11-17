@@ -1,3 +1,3 @@
-# JeForceX™ powered by GitHub Pages
+# JeForceX™ Forge
 
 Hello World!
