@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>JeForceX™ powered by GitHub Pages</title>
-    <link rel="stylesheet" href="include/style.css" />
-    <link rel="icon" type="image/png" href="include/favicon.png" />
-    <script src="include/script.js"></script>
+    <title id="site-title">JeForceX&#153; Forge</title>
+    <link rel="stylesheet" href="include/forge.css" />
+    <link rel="icon" type="image/png" href="assets/forge/favicon.png" />
+    <meta charset="UTF-8">
   </head>
   <body>
-    <p>Hello World!</p>
-    <script>HelloWorld();</script>
+    <div id="header">
+      <a href="/"><img id="site-logo" src="assets/forge/logo.png" alt="JeForceX&#153; Forge" title="JeForceX&#153; Forge" /></a><div id="site-name">Forge</div></div>
+    </div>
+    <div id="navigation">
+      <a href="javascript:void(0)" onclick="unloadModules(); loadForge();">Forge</a><a href="javascript:void(0)" onclick="unloadModules(); loadWORLDS();">WORLDS</a>
+    </div>
+    <div id="mod-forge" class="system-module">
+      <div class="content-left">
+        <div class="module-title">FORGE: Left Column</div>
+        <div class="module-content">Some Placeholder Text</div>
+      </div>
+      <div class="content-center">FORGE: Content Center</div>
+      <div class="content-right">
+        <div class="module-title">FORGE: Right Column</div>
+        <div class="module-content">Some Placeholder Text</div>
+      </div>
+    </div>
+    <div id="mod-worlds" class="system-module">
+      <div class="content-left">WORLDS: Content Left</div>
+      <div class="content-center">WORLDS: Content Center</div>
+      <div class="content-right">WORLDS: Content Right</div>
+    </div>
+    <!-- Include JavaScript Engines -->
+    <script src="include/forge.js"></script>
+    <script src="include/worlds.js"></script>
   </body>
 </html>
