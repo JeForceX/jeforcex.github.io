@@ -7,30 +7,95 @@
     <meta charset="UTF-8">
   </head>
   <body>
-    <div id="header">
-      <a href="/"><img id="site-logo" src="assets/forge/logo.png" alt="JeForceX&#153; Forge" title="JeForceX&#153; Forge" /></a><div id="site-name">Forge</div></div>
-    </div>
-    <div id="navigation">
-      <a href="javascript:void(0)" onclick="unloadModules(); loadForge();">Forge</a><a href="javascript:void(0)" onclick="unloadModules(); loadWORLDS();">WORLDS</a>
-    </div>
-    <div id="mod-forge" class="system-module">
-      <div class="content-left">
-        <div class="module-title">FORGE: Left Column</div>
-        <div class="module-content">Some Placeholder Text</div>
-      </div>
-      <div class="content-center">FORGE: Content Center</div>
-      <div class="content-right">
-        <div class="module-title">FORGE: Right Column</div>
-        <div class="module-content">Some Placeholder Text</div>
+    <div id="header-wrapper">
+      <div id="header-content">
+        <a href="/"><img id="site-logo" src="assets/forge/logo.png" alt="Logo" title="JeForceX&#153; Forge" /></a><div id="site-name">Forge</div></div>
       </div>
     </div>
-    <div id="mod-worlds" class="system-module">
-      <div class="content-left">WORLDS: Content Left</div>
-      <div class="content-center">WORLDS: Content Center</div>
-      <div class="content-right">WORLDS: Content Right</div>
+    <div id="navigation-wrapper">
+      <div id="navigation-content">
+        <a href="javascript:void(0)" onclick="unloadModules(); loadForge();">Forge</a><a href="javascript:void(0)" onclick="unloadModules(); loadWORLDS();">WORLDS</a>
+      </div>
     </div>
-    <!-- Include JavaScript Engines -->
-    <script src="include/forge.js"></script>
-    <script src="include/worlds.js"></script>
+    <div class="content-wrapper">
+      <div class="content-container" id="mod-forge">
+        <div class="content-left">
+          <div class="widget-wrapper">
+            <div class="widget-title">Left Column 1</div>
+            <div class="widget-content">Some Placeholder Text<br/>Some Placeholder Text<br/>Some Placeholder Text</div>
+          </div>
+          <div class="widget-wrapper">
+            <div class="widget-title">Left Column 2</div>
+            <div class="widget-content">Some Placeholder Text<br/>Some Placeholder Text<br/>Some Placeholder Text</div>
+          </div>
+          <div class="widget-wrapper">
+            <div class="widget-title">Left Column 3</div>
+            <div class="widget-content">Some Placeholder Text<br/>Some Placeholder Text<br/>Some Placeholder Text</div>
+          </div>
+        </div>
+        <div class="content-center">
+          <div class="widget-wrapper">
+            <div class="widget-title">Welcome Message</div>
+            <div class="widget-content"><h2>JeForceX&#153; Forge</h2><p>Welcome to JeForceX&#153; Forge, a Learning & Development Platform, Application Staging Platform, as well as Online Portfolio of the resident Web Application Developer.</p></div>
+          </div>
+          <div class="widget-wrapper">
+            <div class="widget-title">Portfolio</div>
+            <div class="widget-content">Some Placeholder Text<br/>Some Placeholder Text<br/>Some Placeholder Text</div>
+          </div>
+          <div class="widget-wrapper">
+            <div class="widget-title">Content Widget 3</div>
+            <div class="widget-content">Some Placeholder Text<br/>Some Placeholder Text<br/>Some Placeholder Text</div>
+          </div>
+        </div>
+        <div class="content-right">
+          <div class="widget-wrapper">
+            <div class="widget-title">Right Column 1</div>
+            <div class="widget-content">Some Placeholder Text<br/>Some Placeholder Text<br/>Some Placeholder Text</div>
+          </div>
+          <div class="widget-wrapper">
+            <div class="widget-title">Right Column 2</div>
+            <div class="widget-content">Some Placeholder Text<br/>Some Placeholder Text<br/>Some Placeholder Text</div>
+          </div>
+          <div class="widget-wrapper">
+            <div class="widget-title">Right Column 3</div>
+            <div class="widget-content">Some Placeholder Text<br/>Some Placeholder Text<br/>Some Placeholder Text</div>
+          </div>
+        </div>  
+      </div>
+    </div>
+    <div class="content-wrapper"></div>
+      <div class="content-container" id="mod-worlds">
+        <div class="content-left">WORLDS: Content Left</div>
+        <div class="content-center">WORLDS: Content Center</div>
+        <div class="content-right">WORLDS: Content Right</div>
+      </div>
+      <div id="footer-wrapper">
+        <div id="footer-content">
+          <div id="footer-widget-1">
+            <a href="/" id="footer-logo"><img src="assets\forge\logo.png" alt="Logo" title="JeForceX&#153; Forge" /></a>
+            <p><b>JeForceX™ Forge</b> is a Learning & Development Platform, Application Staging Platform, as well as Online Portfolio of the resident Web Application Developer.</p>
+          </div>
+          <div id="footer-widget-2">
+            <h5>Navigation</h5>
+            <p>Some Placeholder Text</p>
+          </div>
+          <div id="footer-widget-3">
+            <p>Some Placeholder Text</p>
+          </div>
+          <div id="footer-widget-4">
+            <p>Some Placeholder Text</p>
+          </div>
+        </div>
+      </div>
+      <div id="copyright-wrapper">
+        <div id="copyright-content">
+          <div id="copyright-notice">&#169; Copyright <span id="copyright-year">copyright-year</span> JeForceX™. All rights reserved.<a class="legal-link" href="https://github.com/site/privacy" target="_blank">Privacy</a> <a class="legal-link" href="https://github.com/site/terms" target="_blank">Terms</a></div>
+        </div>
+      </div>
+    </div>
   </body>
+  <!-- Start of JavaScript Engine Initialization -->
+  <script src="include/forge.js"></script>
+  <script src="include/worlds.js"></script>
+  <!-- End of JavaScript Engine Initialization -->
 </html>
