@@ -1,1 +1,0 @@
-© Copyright 2020 JeForceX™. All rights reserved.
