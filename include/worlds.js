@@ -1,4 +1,0 @@
-/* --------------
-JeForceX™ WORLDS
-JavaScript Engine
--------------- */
