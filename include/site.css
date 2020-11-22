@@ -208,18 +208,18 @@ a:hover {
   margin: auto;
 }
 
-#footer-logo {
-  display: block;
-  text-align: center;
-}
-
-.footer-link {
+#footer-content a {
   line-height: 2em;
   color: #DDBB99;
 }
 
-.footer-link:hover {
+#footer-content a:hover {
   color: #FFDDBB;
+}
+
+#footer-logo {
+  display: block;
+  text-align: center;
 }
 
 #footer-widget-1 {

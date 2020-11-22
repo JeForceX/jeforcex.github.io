@@ -1,14 +1,31 @@
 /* --------------
 JeForceX™ Forge
+Role-Playing Game
 JavaScript Engine
 -------------- */
 
-// Notification Controller
+// Write Current Year to Copyright Notice
+const current_date = new Date();
+const current_year = current_date.getFullYear();
+document.getElementById("copyright-year").innerHTML = current_year;
+
+/* Notification Controller
+----------------------- */
 const modNotification = document.getElementById("notification-container");
 const notificationWindow = document.getElementById("notification-content");
 const notificationMessage = document.getElementById("notification-message");
 function showNotification() {modNotification.style.display = "block";}
 function hideNotification() {modNotification.style.display = "none";}
+
+function styleNotificationRed() {
+  notificationWindow.style.backgroundColor = "#FFEEEE";
+  notificationWindow.style.border = "1px solid #CCDDCC";
+}
+
+function styleNotificationGreen() {
+  notificationWindow.style.backgroundColor = "#EEFFEE";
+  notificationWindow.style.border = "1px solid #CCDDCC";
+}
 
 /* Module Controller
 ----------------- */
@@ -21,7 +38,7 @@ const modLibrary = document.getElementById("modLibrary");
 const modAbout = document.getElementById("modAbout");
 
 // List of Modules
-var modList = [
+const modList = [
   modDashboard,
   modBoardroom,
   modCafeteria,
@@ -62,7 +79,7 @@ function gotoAbout() {
   modAbout.style.display = "block";
 }
 
-// System Boot Commands
+// System Boot Controller
 gotoDashboard();
 
 /* Forge Controller
@@ -101,7 +118,25 @@ function forgeTempDecr() {
   forgeTempCheck();
 }
 
-// Write Current Year to Copyright Notice
-const current_date = new Date();
-const current_year = current_date.getFullYear();
-document.getElementById("copyright-year").innerHTML = current_year;
+/* Player Character
+---------------- */
+
+const playerCharacter = {
+  profile: {
+    firstName: "",
+    lastName: "",
+    gender: "",
+    alignment: ""
+  },
+  ability: {
+    STR: 10, // Strength
+    DEX: 10, // Dexterity
+    CON: 10, // Constitution
+    WIS: 10, // Wisdom
+    INT: 10, // Intelligence
+    CHA: 10 // Charisma
+  },
+  status: {
+    health: 100
+  }
+}

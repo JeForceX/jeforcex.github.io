@@ -2,17 +2,18 @@
 <html>
   <head>
     <title id="site-title">JeForceX&#153; Forge</title>
-    <link rel="stylesheet" href="include/forge.css" />
-    <link rel="icon" type="image/png" href="assets/forge/favicon.png" />
+    <link rel="stylesheet" href="include/site.css" />
+    <link rel="icon" type="image/png" href="assets/site/favicon.png" />
     <meta charset="UTF-8">
   </head>
   <body>
     <!-- Section: Header -->
     <div id="header-wrapper">
       <div id="header-content">
-        <a href="/"><img id="site-logo" src="assets/forge/logo.png" alt="Logo" title="JeForceX&#153; Forge" /></a><div id="site-name">Forge</div></div>
+        <a href="/"><img id="site-logo" src="assets/site/logo.png" alt="Logo" title="JeForceX&#153; Forge" /></a><div id="site-name">Forge</div></div>
       </div>
     </div>
+    <!-- Section: Navigation -->
     <div id="navigation-wrapper">
       <div id="navigation-content">
         <a href="javascript:void(0)" onclick="gotoDashboard();">Dashboard</a>
@@ -39,38 +40,55 @@
         <div class="content-left">
           <div class="widget-wrapper">
             <div class="widget-title">Character Profile</div>
+            <div class="widget-content">
+              <b>Name</b>: <span id="uiplayerName">-</span><br/>
+              <b>Age</b>: <span id="uiplayerAge">-</span><br/>
+              <b>Gender</b>: <span id="uiplayerGender">-</span><br/>
+              <b>Race</b>: <span id="uiplayerRace">-</span><br/>
+              <b>Alignment</b>: <span id="uiplayerAlignment">-</span><br/>
+              <b>Class</b>: <span id="uiplayerClass">-</span>
+            </div>
+          </div>
+          <div class="widget-wrapper">
+            <div class="widget-title">Character Ability</div>
             <div class="widget-content">Some Placeholder Text<br/>Some Placeholder Text<br/>Some Placeholder Text</div>
           </div>
           <div class="widget-wrapper">
-            <div class="widget-title">Left Column 2</div>
-            <div class="widget-content">Some Placeholder Text<br/>Some Placeholder Text<br/>Some Placeholder Text</div>
-          </div>
-          <div class="widget-wrapper">
-            <div class="widget-title">Left Column 3</div>
+            <div class="widget-title">Character Status</div>
             <div class="widget-content">Some Placeholder Text<br/>Some Placeholder Text<br/>Some Placeholder Text</div>
           </div>
         </div>
         <div class="content-center">
           <div class="widget-wrapper">
-            <div class="widget-title">Start</div>
+            <div class="widget-title">Welcome</div>
+            <div class="widget-content">Some Placeholder Text<br/>Some Placeholder Text<br/>Some Placeholder Text</div>
+          </div>
+          <div class="widget-wrapper">
+            <div class="widget-title">Create Character</div>
             <div class="widget-content">
-              <h5>Create Character</h5>
-              <p>
+              <h5>Profile</h5>
+              <form>
                 <b>First Name</b> <input type="text" id="infirstName" style="margin-right: 20px;">
-                <b>Last Name</b> <input type="text" id="inlastName">
-              </p>
-              <input type="button" value="Submit" onclick="demo();">
+                <b>Last/Family Name</b> <input type="text" id="inlastName">
+                <p>
+                  <input type="reset" value="Reset">
+                  <input type="button" value="Submit" onclick="demo();">
+                </p>
+              </form>
               <script>
                 function demo() {
-                  notificationMessage.innerHTML = "Player Character is now known as <b>" + infirstName.value + " " + inlastName.value + "</b>.";
-                  showNotification();
+                  if (infirstName.value == "" || inlastName.value == "") {
+                    notificationMessage.innerHTML = "<b>[Error]</b> Please provide both First Name and Last/Family Name.";
+                    styleNotificationRed();
+                    showNotification();
+                  } else {
+                    notificationMessage.innerHTML = "<b>[Success]</b> Player Character is now known as <b>" + infirstName.value + " " + inlastName.value + "</b>.";
+                    styleNotificationGreen();
+                    showNotification();
+                  }
                 }
               </script>
             </div>
-          </div>
-          <div class="widget-wrapper">
-            <div class="widget-title">System Map</div>
-            <div class="widget-content">Some Placeholder Text<br/>Some Placeholder Text<br/>Some Placeholder Text</div>
           </div>
           <div class="widget-wrapper">
             <div class="widget-title">News Feed</div>
@@ -251,20 +269,21 @@
           <p><b>JeForceX™ Forge</b> is a Learning & Development Platform, Application Staging Platform, as well as Online Portfolio of the resident Web Application Developer.</p>
         </div>
         <div id="footer-widget-2">
-          <h5>Network</h5>
-          <a class="footer-link" href="https://jeforcexofficial.wordpress.com" target="_blank">Brand Website</a><br/>
-          <a class="footer-link" href="https://myanimelist.net/profile/JeForceX" target="_blank">MyAnimeList Profile</a><br/>
-          <a class="footer-link" href="https://steamcommunity.com/id/JeForceX" target="_blank">Steam Profile</a><br/>
-          <a class="footer-link" href="https://github.com/JeForceX" target="_blank">GitHub Profile</a>
+          <h5>Navigation</h5>
+          <a href="javascript:void(0)" onclick="gotoAbout();">About</a>
         </div>
         <div id="footer-widget-3">
-          <h5>Social Media</h5>
-          <a class="footer-link" href="https://www.facebook.com/JeForceXOfficial" target="_blank">Facebook</a><br/>
-          <a class="footer-link" href="https://twitter.com/JeForceXOfficia" target="_blank">Twitter</a><br/>
-          <a class="footer-link" href="https://www.youtube.com/channel/UC1YQ9c5rXyNmfdbT2q8i2Og" target="_blank">YouTube</a>
+          <h5>Network</h5>
+          <a href="https://jeforcexofficial.wordpress.com" target="_blank">Brand Website</a><br/>
+          <a href="https://myanimelist.net/profile/JeForceX" target="_blank">MyAnimeList Profile</a><br/>
+          <a href="https://steamcommunity.com/id/JeForceX" target="_blank">Steam Profile</a><br/>
+          <a href="https://github.com/JeForceX" target="_blank">GitHub Profile</a>
         </div>
         <div id="footer-widget-4">
-          <p>Some Placeholder Text</p>
+          <h5>Social Media</h5>
+          <a href="https://www.facebook.com/JeForceXOfficial" target="_blank">Facebook</a><br/>
+          <a href="https://twitter.com/JeForceXOfficia" target="_blank">Twitter</a><br/>
+          <a href="https://www.youtube.com/channel/UC1YQ9c5rXyNmfdbT2q8i2Og" target="_blank">YouTube</a>
         </div>
       </div>
     </div>
@@ -275,6 +294,6 @@
     </div>
   </body>
   <!-- Start of JavaScript Engine Initialization -->
-  <script src="include/forge.js"></script>
+  <script src="include/site.js"></script>
   <!-- End of JavaScript Engine Initialization -->
 </html>
