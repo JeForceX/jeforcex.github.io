@@ -1,6 +1,5 @@
 /* --------------
 JeForceX™ Forge
-Role-Playing Game
 JavaScript Engine
 -------------- */
 
@@ -9,42 +8,37 @@ const current_date = new Date();
 const current_year = current_date.getFullYear();
 document.getElementById("copyright-year").innerHTML = current_year;
 
-/* Notification Controller
------------------------ */
-const modNotification = document.getElementById("notification-container");
-const notificationWindow = document.getElementById("notification-content");
-const notificationMessage = document.getElementById("notification-message");
-function showNotification() {modNotification.style.display = "block";}
-function hideNotification() {modNotification.style.display = "none";}
-
-function styleNotificationRed() {
-  notificationWindow.style.backgroundColor = "#FFEEEE";
-  notificationWindow.style.border = "1px solid #CCDDCC";
-}
-
-function styleNotificationGreen() {
-  notificationWindow.style.backgroundColor = "#EEFFEE";
-  notificationWindow.style.border = "1px solid #CCDDCC";
-}
-
 /* Module Controller
 ----------------- */
 
 // Define Modules
 const modDashboard = document.getElementById("modDashboard");
-const modBoardroom = document.getElementById("modBoardroom");
-const modCafeteria = document.getElementById("modCafeteria");
-const modLibrary = document.getElementById("modLibrary");
+const modLearn = document.getElementById("modLearn");
+const modStage = document.getElementById("modStage");
+const modPortfolio = document.getElementById("modPortfolio");
 const modAbout = document.getElementById("modAbout");
+const modContact = document.getElementById("modContact");
+const modPrivacy = document.getElementById("modPrivacy");
+const modTerms = document.getElementById("modTerms");
 
 // List of Modules
 const modList = [
   modDashboard,
-  modBoardroom,
-  modCafeteria,
-  modLibrary,
-  modAbout
+  modLearn,
+  modStage,
+  modPortfolio,
+  modAbout,
+  modContact,
+  modPrivacy,
+  modTerms
 ];
+
+// Function to Load All Modules
+function loadModAll() {
+  for (i = 0; i < modList.length; i++) {
+    modList[i].style.display = "block";
+  }
+}
 
 // Function to Unload All Modules
 function unloadModAll() {
@@ -53,25 +47,25 @@ function unloadModAll() {
   }
 }
 
-// Functions to Load Modules
+// Functions to Load Individual Modules
 function gotoDashboard() {
   unloadModAll();
   modDashboard.style.display = "block";
 }
 
-function gotoBoardroom() {
+function gotoLearn() {
   unloadModAll();
-  modBoardroom.style.display = "block";
+  modLearn.style.display = "block";
 }
 
-function gotoCafeteria() {
+function gotoStage() {
   unloadModAll();
-  modCafeteria.style.display = "block";
+  modStage.style.display = "block";
 }
 
-function gotoLibrary() {
+function gotoPortfolio() {
   unloadModAll();
-  modLibrary.style.display = "block";
+  modPortfolio.style.display = "block";
 }
 
 function gotoAbout() {
@@ -79,64 +73,23 @@ function gotoAbout() {
   modAbout.style.display = "block";
 }
 
-// System Boot Controller
+function gotoContact() {
+  unloadModAll();
+  modContact.style.display = "block";
+}
+
+function gotoPrivacy() {
+  unloadModAll();
+  modPrivacy.style.display = "block";
+}
+
+function gotoTerms() {
+  unloadModAll();
+  modTerms.style.display = "block";
+}
+
+/* System Boot Controller
+---------------------- */
+
+// Function to be Executed during System Boot
 gotoDashboard();
-
-/* Forge Controller
----------------- */
-
-// Forge Status Parameters
-var forgeHealth = document.getElementById("forgeHealth");
-var forgeTempDisp = document.getElementById("forgeTempDisp");
-var forgeTempCore = 50;
-
-// Forge Temperature: Check
-function forgeTempCheck() {
-  if (forgeTempCore > 55) {
-    forgeHealth.innerHTML = "Overheating";
-    forgeHealth.style.color = "#DD8844";
-  } else if (forgeTempCore < 45) {
-    forgeHealth.innerHTML = "Freezing";
-    forgeHealth.style.color = "#4488DD";
-  } else {
-    forgeHealth.innerHTML = "Excellent";
-    forgeHealth.style.color = "#008800";
-  }
-}
-
-// Forge Temperature: Increase
-function forgeTempIncr() {
-  forgeTempCore += 1;
-  forgeTempDisp.innerHTML = forgeTempCore;
-  forgeTempCheck();
-}
-
-// Forge Temperature: Decrease
-function forgeTempDecr() {
-  forgeTempCore -= 1;
-  forgeTempDisp.innerHTML = forgeTempCore;
-  forgeTempCheck();
-}
-
-/* Player Character
----------------- */
-
-const playerCharacter = {
-  profile: {
-    firstName: "",
-    lastName: "",
-    gender: "",
-    alignment: ""
-  },
-  ability: {
-    STR: 10, // Strength
-    DEX: 10, // Dexterity
-    CON: 10, // Constitution
-    WIS: 10, // Wisdom
-    INT: 10, // Intelligence
-    CHA: 10 // Charisma
-  },
-  status: {
-    health: 100
-  }
-}

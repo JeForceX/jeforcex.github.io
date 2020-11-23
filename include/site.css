@@ -6,6 +6,10 @@ Cascading Style Sheet
 /* Global Section
 -------------- */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
   font-family: Tahoma;
@@ -94,35 +98,6 @@ a:hover {
   background-color: #DD2222;
 }
 
-/* Notification Section
--------------------- */
-
-#notification-wrapper {
-  padding: 0px 10px;
-}
-
-#notification-container {
-  display: none;
-  width: 1200px;
-  margin: auto;
-}
-
-#notification-content {
-  background-color: #FFEEEE;
-  border: 1px solid #DDCCCC;
-  padding: 6px;
-  margin-bottom: 10px;
-}
-
-#notification-message {
-  display: inline-block;
-}
-
-#notification-dismiss {
-  display: block;
-  float: right;
-}
-
 /* Content Section
 --------------- */
 
@@ -138,21 +113,14 @@ a:hover {
 
 .content-left {
   display: inline-block;
+  width: 930px;
   margin-right: 6px;
-  width: 240px;
-  vertical-align: top;
-}
-
-.content-center {
-  display: inline-block;
-  width: 700px;
   vertical-align: top;
 }
 
 .content-right {
   display: inline-block;
-  margin-left: 6px;
-  width: 240px;
+  width: 260px;
   vertical-align: top;
 }
 
@@ -198,23 +166,23 @@ a:hover {
   color: #FFFFFF;
 }
 
+#footer-wrapper a {
+  line-height: 2em;
+  color: #DDBB99;
+}
+
+#footer-wrapper a:hover {
+  color: #FFDDBB;
+}
+
 #footer-wrapper h5 {
-  color: #FF0000;
+  color: #DD2222;
   border: 0px;
 }
 
 #footer-content {
   width: 1200px;
   margin: auto;
-}
-
-#footer-content a {
-  line-height: 2em;
-  color: #DDBB99;
-}
-
-#footer-content a:hover {
-  color: #FFDDBB;
 }
 
 #footer-logo {
@@ -268,6 +236,14 @@ a:hover {
   color: #FFDDBB;
 }
 
+#copyright-content .left {
+  float: left;
+}
+
+#copyright-content .right {
+  float: right;
+}
+
 #copyright-notice {
   padding: 10px;
 }
@@ -279,10 +255,11 @@ a:hover {
 /* Custom Styles Section
 --------------------- */
 
-#forgeHealth {
-  color: #008800;
+.clear {
+  clear: both;
 }
 
 .under-construction {
   text-align: center;
+  color: #999999;
 }
