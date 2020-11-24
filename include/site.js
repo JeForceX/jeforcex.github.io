@@ -8,10 +8,10 @@ const current_date = new Date();
 const current_year = current_date.getFullYear();
 document.getElementById("copyright-year").innerHTML = current_year;
 
-/* Module Controller
------------------ */
+/* Module Controller: Main
+----------------------- */
 
-// Define Modules
+// Define Main Modules
 const modDashboard = document.getElementById("modDashboard");
 const modLearn = document.getElementById("modLearn");
 const modStage = document.getElementById("modStage");
@@ -21,8 +21,8 @@ const modContact = document.getElementById("modContact");
 const modPrivacy = document.getElementById("modPrivacy");
 const modTerms = document.getElementById("modTerms");
 
-// List of Modules
-const modList = [
+// List of Main Modules
+const modListMain = [
   modDashboard,
   modLearn,
   modStage,
@@ -34,62 +34,87 @@ const modList = [
 ];
 
 // Function to Load All Modules
-function loadModAll() {
-  for (i = 0; i < modList.length; i++) {
-    modList[i].style.display = "block";
+function modListMain_Show() {
+  for (i = 0; i < modListMain.length; i++) {
+    modListMain[i].style.display = "block";
   }
 }
 
 // Function to Unload All Modules
-function unloadModAll() {
-  for (i = 0; i < modList.length; i++) {
-    modList[i].style.display = "none";
+function modListMain_Hide() {
+  for (i = 0; i < modListMain.length; i++) {
+    modListMain[i].style.display = "none";
   }
 }
 
 // Functions to Load Individual Modules
 function gotoDashboard() {
-  unloadModAll();
+  modListMain_Hide();
   modDashboard.style.display = "block";
 }
 
 function gotoLearn() {
-  unloadModAll();
+  modListMain_Hide();
   modLearn.style.display = "block";
 }
 
 function gotoStage() {
-  unloadModAll();
+  modListMain_Hide();
   modStage.style.display = "block";
 }
 
 function gotoPortfolio() {
-  unloadModAll();
+  modListMain_Hide();
   modPortfolio.style.display = "block";
 }
 
 function gotoAbout() {
-  unloadModAll();
+  modListMain_Hide();
   modAbout.style.display = "block";
 }
 
 function gotoContact() {
-  unloadModAll();
+  modListMain_Hide();
   modContact.style.display = "block";
 }
 
 function gotoPrivacy() {
-  unloadModAll();
+  modListMain_Hide();
   modPrivacy.style.display = "block";
 }
 
 function gotoTerms() {
-  unloadModAll();
+  modListMain_Hide();
   modTerms.style.display = "block";
+}
+
+/* Module Controller: Sidebar
+-------------------------- */
+
+// Define Sidebar Modules
+const modSideRPG = document.getElementById("modSideRPG");
+const modSideSoftware = document.getElementById("modSideSoftware");
+const modSideServices = document.getElementById("modSideServices");
+const modSideResources = document.getElementById("modSideResources");
+
+// List of Sidebar Modules
+const modListSide = [
+  modSideRPG,
+  modSideSoftware,
+  modSideServices,
+  modSideResources
+]
+
+// Function to Load All Sidebar Modules
+function modListSide_Load() {
+  for (i = 0; i < modListSide.length; i++) {
+    modListSide[i].style.display = "block";
+  }
 }
 
 /* System Boot Controller
 ---------------------- */
 
-// Function to be Executed during System Boot
+// Functions to be Executed during System Boot
 gotoDashboard();
+modListSide_Load();

@@ -26,9 +26,9 @@ h5 { font-size: 140%; }
 h6 { font-size: 120%; }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 1px 0px;
+  margin: 0px;
   color: #DD2222;
-  padding: 0.3em 0em 0.6em 0em;
+  padding: 0.5em 0em 0.5em 0em;
   border-bottom: 1px solid #DDDDDD;
 }
 
@@ -69,7 +69,7 @@ a:hover {
 #site-name {
   display: inline;
   vertical-align: middle;
-  font-size: 34px;
+  font-size: 40px;
   color: #bbbbbb;
 }
 
@@ -105,38 +105,33 @@ a:hover {
   padding: 0px 10px;
 }
 
-.content-container {
-  display: none;
+#content-container {
   width: 1200px;
   margin: 0px auto;
 }
 
-.content-left {
+#content-main {
   display: inline-block;
-  width: 930px;
+  width: 850px;
   margin-right: 6px;
   vertical-align: top;
 }
 
-.content-right {
+#content-side {
   display: inline-block;
-  width: 260px;
+  width: 340px;
   vertical-align: top;
 }
 
-.table-of-contents {
-  padding: 10px;
-  border: 1px solid 888888;
-}
-
-/* Widget Section
+/* Module Section
 --------------- */
 
-.widget-wrapper {
+.module-wrapper {
+  display: none;
   margin-bottom: 10px;
 }
 
-.widget-title {
+.module-title {
   display: block;
   padding: 6px;
   background-color: #BB2222;
@@ -146,14 +141,14 @@ a:hover {
   text-align: center;
 }
 
-.widget-content {
+.module-content {
   display: block;
   padding: 10px;
   background-color: #f0f0f0;
 }
 
-.content-left .widget-content p, .content-right .widget-content p {
-  margin: 0px;
+.module-content img {
+  max-width: 100%;
 }
 
 /* Footer Section
@@ -166,23 +161,24 @@ a:hover {
   color: #FFFFFF;
 }
 
-#footer-wrapper a {
+#footer-content {
+  width: 1200px;
+  margin: auto;
+}
+
+#footer-content a {
   line-height: 2em;
   color: #DDBB99;
 }
 
-#footer-wrapper a:hover {
+#footer-content a:hover {
   color: #FFDDBB;
 }
 
-#footer-wrapper h5 {
+#footer-content h5 {
   color: #DD2222;
   border: 0px;
-}
-
-#footer-content {
-  width: 1200px;
-  margin: auto;
+  padding-top: 0px;
 }
 
 #footer-logo {
@@ -190,61 +186,64 @@ a:hover {
   text-align: center;
 }
 
-#footer-widget-1 {
+#footer-module-1 {
   display: inline-block;
-  width: 285px;
-  margin-right: 16px;
+  width: 320px;
+  margin-right: 40px;
   vertical-align: top;
 }
 
-#footer-widget-2 {
+#footer-module-2 {
   display: inline-block;
-  width: 285px;
-  margin-right: 16px;
+  width: 120px;
+  margin-right: 40px;
   vertical-align: top;
 }
 
-#footer-widget-3 {
+#footer-module-3 {
   display: inline-block;
-  width: 285px;
-  margin-right: 16px;
+  width: 120px;
+  margin-right: 40px;
   vertical-align: top;
 }
 
-#footer-widget-4 {
+#footer-module-4 {
   display: inline-block;
-  width: 285px;
+  width: 120px;
   vertical-align: top;
 }
 
-#copyright-wrapper {
+/* Legal Section
+------------- */
+
+#legal-wrapper {
   padding: 0px 10px;
   background-color: #000000;
   color: #FFFFFF;
 }
 
-#copyright-content {
+#legal-content {
   width: 1200px;
   margin: auto;
 }
 
-#copyright-content a {
+#legal-content a {
   color: #DDBB99;
 }
 
-#copyright-content a:hover {
+#legal-content a:hover {
   color: #FFDDBB;
 }
 
-#copyright-content .left {
+#legal-content .left {
   float: left;
 }
 
-#copyright-content .right {
+#legal-content .right {
   float: right;
 }
 
-#copyright-notice {
+#legal-padding {
   padding: 10px;
 }
 
@@ -252,8 +251,33 @@ a:hover {
   margin-left: 15px;
 }
 
-/* Custom Styles Section
---------------------- */
+/* Dashboard Cards
+--------------- */
+
+.dashboard-card {
+  display: inline-block;
+  width: 250px;
+  height: 385px;
+  padding: 10px;
+  margin-right: 6px;
+  background-color: #663399;
+  color: #FFFFFF;
+  font-size: 200%;
+  text-align: center;
+}
+
+.dashboard-card:hover {
+  background-color: #7744AA;
+  color: #FFFFFF;
+}
+
+.dashboard-card div {
+  position: relative;
+  top: 48%;
+}
+
+/* Custom Styles
+------------- */
 
 .clear {
   clear: both;
@@ -262,4 +286,9 @@ a:hover {
 .under-construction {
   text-align: center;
   color: #999999;
+}
+
+.table-of-contents {
+  padding: 10px;
+  border: 1px solid #888888;
 }
