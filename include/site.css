@@ -251,17 +251,18 @@ a:hover {
   margin-left: 15px;
 }
 
-/* Dashboard Cards
---------------- */
+/* Dashboard Portfolio Cards
+------------------------- */
 
 .dashboard-card {
   display: inline-block;
-  width: 250px;
-  height: 385px;
+  width: 180px;
+  height: 280px;
   padding: 10px;
   margin-right: 6px;
+  border-radius: 20px;
   background-color: #663399;
-  color: #FFFFFF;
+  color: #EEEEEE;
   font-size: 200%;
   text-align: center;
 }
@@ -276,6 +277,68 @@ a:hover {
   top: 48%;
 }
 
+/* Sidebar Elements
+--------------- */
+
+.sidebar-banner {
+  display: block;
+  height: 20px;
+  padding: 30px;
+  margin-bottom: 10px;
+  background-color: #663399;
+  color: #EEEEEE;
+  font-size: 140%;
+  text-align: center;
+}
+
+.sidebar-banner:hover {
+  background-color: #7744AA;
+  color: #FFFFFF
+}
+
+.sidebar-button {
+  display: block;
+  width: 50%;
+  padding: 4px;
+  margin: auto;
+  background-color: #BB2222;
+  border-radius: 8px;
+  border-top: 4px solid #DD2222;
+  border-left: 4px solid #DD2222;
+  border-right: 4px solid #992222;
+  border-bottom: 4px solid #992222;
+  color: #EEEEEE;
+  font-size: 120%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sidebar-button:hover {
+  background-color: #DD2222;
+  border-top: 4px solid #FF2222;
+  border-left: 4px solid #FF2222;
+  border-right: 4px solid #BB2222;
+  border-bottom: 4px solid #BB2222;
+  color: #FFFFFF;
+}
+
+/* Role-Playing Game Launcher
+-------------------------- */
+
+#rpg-logo {
+  height: 160px;
+  background-color: #000000;
+  color: #FFBB00;
+  font-family: Times New Roman;
+  font-size: 80px;
+  text-align: center;
+}
+
+#rpg-logo div {
+  position: relative;
+  top: 44%;
+}
+
 /* Custom Styles
 ------------- */
 
@@ -283,12 +346,16 @@ a:hover {
   clear: both;
 }
 
-.under-construction {
+.floater {
   text-align: center;
-  color: #999999;
 }
 
 .table-of-contents {
   padding: 10px;
   border: 1px solid #888888;
+}
+
+.under-construction {
+  text-align: center;
+  color: #999999;
 }

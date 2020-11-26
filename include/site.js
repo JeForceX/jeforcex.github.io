@@ -33,21 +33,21 @@ const modListMain = [
   modTerms
 ];
 
-// Function to Load All Modules
+// Function to Show All Main Modules
 function modListMain_Show() {
   for (i = 0; i < modListMain.length; i++) {
     modListMain[i].style.display = "block";
   }
 }
 
-// Function to Unload All Modules
+// Function to Hide All Main Modules
 function modListMain_Hide() {
   for (i = 0; i < modListMain.length; i++) {
     modListMain[i].style.display = "none";
   }
 }
 
-// Functions to Load Individual Modules
+// Functions to Show Individual Main Modules
 function gotoDashboard() {
   modListMain_Hide();
   modDashboard.style.display = "block";
@@ -93,22 +93,25 @@ function gotoTerms() {
 
 // Define Sidebar Modules
 const modSideRPG = document.getElementById("modSideRPG");
-const modSideSoftware = document.getElementById("modSideSoftware");
-const modSideServices = document.getElementById("modSideServices");
-const modSideResources = document.getElementById("modSideResources");
+const modSideNetwork = document.getElementById("modSideNetwork");
 
 // List of Sidebar Modules
 const modListSide = [
   modSideRPG,
-  modSideSoftware,
-  modSideServices,
-  modSideResources
+  modSideNetwork
 ]
 
-// Function to Load All Sidebar Modules
-function modListSide_Load() {
+// Function to Show All Sidebar Modules
+function modListSide_Show() {
   for (i = 0; i < modListSide.length; i++) {
     modListSide[i].style.display = "block";
+  }
+}
+
+// Function to Hide All Sidebar Modules
+function modListSide_Hide() {
+  for (i = 0; i < modListSide.length; i++) {
+    modListSide[i].style.display = "none";
   }
 }
 
@@ -117,4 +120,4 @@ function modListSide_Load() {
 
 // Functions to be Executed during System Boot
 gotoDashboard();
-modListSide_Load();
+modListSide_Show();

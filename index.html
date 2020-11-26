@@ -38,9 +38,11 @@
                 Find out more about how each site feature works by visiting the respective destination over at the Portal section.</p>
               <h2>Portal</h2>
               <p style="text-align: center;">Select a Destination</p>
-              <a class="dashboard-card" href="javascript:void(0)" onclick="gotoLearn();" title="Learning &amp; Development"><div>Learn</div></a>
-              <a class="dashboard-card" href="javascript:void(0)" onclick="gotoStage();" title="Application Staging"><div>Stage</div></a>
-              <a class="dashboard-card" href="javascript:void(0)" onclick="gotoPortfolio();" title="Portfolio" style="margin-right: 0px;"><div>Portfolio</div></a>
+              <div class="floater">
+                <a class="dashboard-card" href="javascript:void(0)" onclick="gotoLearn();" title="Learning &amp; Development"><div>Learn</div></a>
+                <a class="dashboard-card" href="javascript:void(0)" onclick="gotoStage();" title="Application Staging"><div>Stage</div></a>
+                <a class="dashboard-card" href="javascript:void(0)" onclick="gotoPortfolio();" title="Portfolio" style="margin-right: 0px;"><div>Portfolio</div></a>
+              </div>
             </div>
           </div>
           <!-- Module: Learn -->
@@ -99,28 +101,21 @@
           <div class="module-wrapper" id="modSideRPG">
             <div class="module-title">Role-Playing Game</div>
             <div class="module-content">
-              <p class="under-construction">Under Construction</p>
+              <div id="rpg-logo"><div>RPG</div></div>
+              <p>Some Placeholder Text<br/>
+              Some Placeholder Text<br/>
+              Some Placeholder Text</p>
+              <a class="sidebar-button" href="/portfolio/rpg/" title="Play RPG Now">Play Now</a>
             </div>
           </div>
-          <!-- Module: Featured Software -->
-          <div class="module-wrapper" id="modSideSoftware">
-            <div class="module-title">Featured Software</div>
+          <!-- Module: Network -->
+          <div class="module-wrapper" id="modSideNetwork">
+            <div class="module-title">Network</div>
             <div class="module-content">
-              <p class="under-construction">Under Construction</p>
-            </div>
-          </div>
-          <!-- Module: Featured Services -->
-          <div class="module-wrapper" id="modSideServices">
-            <div class="module-title">Featured Services</div>
-            <div class="module-content">
-              <p class="under-construction">Under Construction</p>
-            </div>
-          </div>
-          <!-- Module: Featured Resources -->
-          <div class="module-wrapper" id="modSideResources">
-            <div class="module-title">Featured Resources</div>
-            <div class="module-content">
-              <p class="under-construction">Under Construction</p>
+              <a class="sidebar-banner" href="https://jeforcexofficial.wordpress.com" target="_blank" title="JeForceX&#153; Website">JeForceX&#153; Website</a>
+              <a class="sidebar-banner" href="https://myanimelist.net/profile/JeForceX" target="_blank" title="MyAnimeList Profile">MyAnimeList Profile</a>
+              <a class="sidebar-banner" href="https://steamcommunity.com/id/JeForceX" target="_blank" title="Steam Profile">Steam Profile</a>
+              <a class="sidebar-banner" href="https://github.com/JeForceX" target="_blank" title="GitHub Profile" style="margin-bottom: 0px;">GitHub Profile</a>
             </div>
           </div>
         </div>
@@ -162,7 +157,7 @@
       <div id="legal-content">
         <div id="legal-padding">
           <div class="left">
-            &#169; Copyright <span id="copyright-year">copyright-year</span> JeForceX™ Forge. All rights reserved.
+            &#169; Copyright <span id="copyright-year">copyright-year</span> JeForceX™. All rights reserved.
             <a class="legal-link" href="javascript:void(0)" onclick="gotoPrivacy();">Privacy</a>
             <a class="legal-link" href="javascript:void(0)" onclick="gotoTerms();">Terms</a>
           </div>
