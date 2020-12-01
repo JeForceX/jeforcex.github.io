@@ -7,167 +7,77 @@
     <meta charset="UTF-8">
   </head>
   <body>
-    <!-- Section: Header -->
-    <div id="header-wrapper">
-      <div id="header-content">
-        <a href="/"><img id="site-logo" src="assets/logo.png" alt="Logo" title="JeForceX&#153; Forge" /></a><div id="site-name">Forge</div></div>
-      </div>
+    <!-- Section: Top -->
+    <div id="top"></div>
+    <!-- Section: Navigation-->
+    <div id="navigation">
+      <a href="/"><img id="site-logo" src="assets/logo.png" alt="Logo" title="JeForceX&#153; Forge" /></a>
+        <a class="link" href="#top">Top</a>
+        <a class="link" href="#game">Game</a>
+        <a class="link" href="#guide">Guide</a>
+        <a class="link" href="#network">Network</a>
+        <a class="link" href="#about">About</a>
+        <a id="back-to-top" href="#top" title="Back to Top">^</a>
+        <a id="youtube" class="connect" href="https://www.youtube.com/channel/UC1YQ9c5rXyNmfdbT2q8i2Og" target="_blank" title="YouTube"></a>
+        <a id="twitter" class="connect" href="https://twitter.com/JeForceXOfficia" target="_blank" title="Twitter"></a>
+        <a id="facebook" class="connect" href="https://www.facebook.com/JeForceXOfficial" target="_blank" title="Facebook"></a>
+        <div class="clear"></div>
     </div>
-    <!-- Section: Navigation -->
-    <div id="navigation-wrapper">
-      <div id="navigation-content">
-        <a href="javascript:void(0)" onclick="gotoDashboard();">Dashboard</a>
-        <a href="javascript:void(0)" onclick="gotoLearn();">Learn</a>
-        <a href="javascript:void(0)" onclick="gotoStage();">Stage</a>
-        <a href="javascript:void(0)" onclick="gotoPortfolio();">Portfolio</a>
-        <a href="javascript:void(0)" onclick="gotoAbout();">About</a>
-        <a href="javascript:void(0)" onclick="gotoContact();">Contact</a>
-      </div>
-    </div>
-    <!-- Section: Content -->
-    <div id="content-wrapper">
-      <div id="content-container">
-        <!-- Section: Main-->
-        <div id="content-main">
-          <!-- Module: Dashboard -->
-          <div class="module-wrapper" id="modDashboard">
-            <div class="module-title">Dashboard</div>
-            <div class="module-content">
-              <h2>Welcome</h2>
-              <p>Welcome to JeForceX&#153; Forge, a Learning & Development Platform, Application Staging Platform, as well as Online Portfolio of the resident Web Application Developer.
-                Find out more about how each site feature works by visiting the respective destination over at the Portal section.</p>
-              <h2>Portal</h2>
-              <p style="text-align: center;">Select a Destination</p>
-              <div class="floater">
-                <a class="dashboard-card" href="javascript:void(0)" onclick="gotoLearn();" title="Learning &amp; Development"><div>Learn</div></a>
-                <a class="dashboard-card" href="javascript:void(0)" onclick="gotoStage();" title="Application Staging"><div>Stage</div></a>
-                <a class="dashboard-card" href="javascript:void(0)" onclick="gotoPortfolio();" title="Portfolio" style="margin-right: 0px;"><div>Portfolio</div></a>
-              </div>
-            </div>
-          </div>
-          <!-- Module: Learn -->
-          <div class="module-wrapper" id="modLearn">
-            <div class="module-title">Learning &amp; Development</div>
-            <div class="module-content">
-              <p class="under-construction">Under Construction</p>
-            </div>
-          </div>
-          <!-- Module: Stage -->
-          <div class="module-wrapper" id="modStage">
-            <div class="module-title">Application Staging</div>
-            <div class="module-content">
-              <p class="under-construction">Under Construction</p>
-            </div>
-          </div>
-          <!-- Module: Portfolio -->
-          <div class="module-wrapper" id="modPortfolio">
-            <div class="module-title">Portfolio</div>
-            <div class="module-content">
-              <p class="under-construction">Under Construction</p>
-            </div>
-          </div>
-          <!-- Module: About -->
-          <div class="module-wrapper" id="modAbout">
-            <div class="module-title">About</div>
-            <div class="module-content">
-              <p class="under-construction">Under Construction</p>
-            </div>
-          </div>
-          <!-- Module: Contact -->
-          <div class="module-wrapper" id="modContact">
-            <div class="module-title">Contact</div>
-            <div class="module-content">
-              <p class="under-construction">Under Construction</p>
-            </div>
-          </div>
-          <!-- Module: Privacy -->
-          <div class="module-wrapper" id="modPrivacy">
-            <div class="module-title">Privacy Policy</div>
-            <div class="module-content">
-              <p class="under-construction">Under Construction</p>
-            </div>
-          </div>
-          <!-- Module: Terms -->
-          <div class="module-wrapper" id="modTerms">
-            <div class="module-title">Terms of Use</div>
-            <div class="module-content">
-              <p class="under-construction">Under Construction</p>
-            </div>
-          </div>
-        </div>
-        <!-- Section: Sidebar-->
-        <div id="content-side">
-          <!-- Module: RPG Launcher-->
-          <div class="module-wrapper" id="modSideRPG">
-            <div class="module-title">Role-Playing Game</div>
-            <div class="module-content">
-              <div id="rpg-logo"><div>RPG</div></div>
-              <p>Some Placeholder Text<br/>
-              Some Placeholder Text<br/>
-              Some Placeholder Text</p>
-              <a class="sidebar-button" href="/portfolio/rpg/" title="Play RPG Now">Play Now</a>
-            </div>
-          </div>
-          <!-- Module: Network -->
-          <div class="module-wrapper" id="modSideNetwork">
-            <div class="module-title">Network</div>
-            <div class="module-content">
-              <a class="sidebar-banner" href="https://jeforcexofficial.wordpress.com" target="_blank" title="JeForceX&#153; Website">JeForceX&#153; Website</a>
-              <a class="sidebar-banner" href="https://myanimelist.net/profile/JeForceX" target="_blank" title="MyAnimeList Profile">MyAnimeList Profile</a>
-              <a class="sidebar-banner" href="https://steamcommunity.com/id/JeForceX" target="_blank" title="Steam Profile">Steam Profile</a>
-              <a class="sidebar-banner" href="https://github.com/JeForceX" target="_blank" title="GitHub Profile" style="margin-bottom: 0px;">GitHub Profile</a>
-            </div>
-          </div>
+    <!-- Module: Forge -->
+    <div class="module-wrapper primary" id="forge">
+      <div class="module-content">
+        <h2>JeForceX&#153; Forge</h2>
+        <p>Welcome to <b>JeForceX&#153; Forge</b>, a GitHub User Website powered by <a href="https://pages.github.com" target="_blank">GitHub Pages</a> which functions as a Proof of Concept Demonstration Website as well as a Web Browser Role-Playing Game.</p>
+        <p>Find out more about the Forge works by checking out each respective feature.</p>
+        <h6>Select a Destination</h6>
+        <div class="portal">
+          <a class="portal-card" href="#game" title="Game">Game</a>
+          <a class="portal-card" href="#guide" title="Guide">Guide</a>
+          <a class="portal-card" href="#network" title="Network">Network</a>
+          <a class="portal-card" href="#about" title="About">About</a>
         </div>
       </div>
     </div>
-    <!-- Section: Footer-->
-    <div id="footer-wrapper">
-      <div id="footer-content">
-        <div id="footer-module-1">
-          <a href="/" id="footer-logo"><img src="assets\logo.png" alt="Logo" title="JeForceX&#153; Forge" /></a>
-          <p><b>JeForceX™ Forge</b> is a Learning & Development Platform, Application Staging Platform, as well as Online Portfolio of the resident Web Application Developer.</p>
-        </div>
-        <div id="footer-module-2">
-          <h5>Navigation</h5>
-          <a href="javascript:void(0)" onclick="gotoDashboard();">Dashboard</a><br/>
-          <a href="javascript:void(0)" onclick="gotoLearn();">Learn</a><br/>
-          <a href="javascript:void(0)" onclick="gotoStage();">Stage</a><br/>
-          <a href="javascript:void(0)" onclick="gotoPortfolio();">Portfolio</a><br/>
-          <a href="javascript:void(0)" onclick="gotoAbout();">About</a><br/>
-          <a href="javascript:void(0)" onclick="gotoContact();">Contact</a>
-        </div>
-        <div id="footer-module-3">
-          <h5>Network</h5>
-          <a href="https://jeforcexofficial.wordpress.com" target="_blank">JeForceX&#153; Website</a><br/>
-          <a href="https://myanimelist.net/profile/JeForceX" target="_blank">MyAnimeList Profile</a><br/>
-          <a href="https://steamcommunity.com/id/JeForceX" target="_blank">Steam Profile</a><br/>
-          <a href="https://github.com/JeForceX" target="_blank">GitHub Profile</a>
-        </div>
-        <div id="footer-module-4">
-          <h5>Social Media</h5>
-          <a href="https://www.facebook.com/JeForceXOfficial" target="_blank">Facebook</a><br/>
-          <a href="https://twitter.com/JeForceXOfficia" target="_blank">Twitter</a><br/>
-          <a href="https://www.youtube.com/channel/UC1YQ9c5rXyNmfdbT2q8i2Og" target="_blank">YouTube</a>
-        </div>
+    <!-- Module: Game -->
+    <div class="module-wrapper secondary" id="game">
+      <div class="module-content">
+        <h2>Game</h2>
+        <p class="construction">Under Construction</p>
+      </div>
+    </div>
+    <!-- Module: Guide -->
+    <div class="module-wrapper primary" id="guide">
+      <div class="module-content">
+        <h2>Guide</h2>
+        <p class="construction">Under Construction</p>
+      </div>
+    </div>
+    <!-- Module: Network -->
+    <div class="module-wrapper secondary" id="network">
+      <div class="module-content">
+        <h2>Network</h2>
+        <p class="construction">Under Construction</p>
+      </div>
+    </div>
+    <!-- Module: About -->
+    <div class="module-wrapper primary" id="about">
+      <div class="module-content">
+        <h2>About</h2>
+        <p class="construction">Under Construction</p>
       </div>
     </div>
     <!-- Section: Legal -->
-    <div id="legal-wrapper">
-      <div id="legal-content">
-        <div id="legal-padding">
-          <div class="left">
-            &#169; Copyright <span id="copyright-year">copyright-year</span> JeForceX™. All rights reserved.
-            <a class="legal-link" href="javascript:void(0)" onclick="gotoPrivacy();">Privacy</a>
-            <a class="legal-link" href="javascript:void(0)" onclick="gotoTerms();">Terms</a>
-          </div>
-          <div class="right">
-            &lt;&gt; with ♥ in <a href="https://en.wikipedia.org/wiki/Singapore" target="_blank">Singapore</a>.
-            Powered by <a href="https://pages.github.com" target="_blank">GitHub Pages</a>.
-          </div>
-          <div class="clear"></div>
-        </div>
+    <div id="legal">
+      <div class="left">
+        &#169; Copyright <span id="jfx_copyright_year"></span> JeForceX™. All rights reserved.
+        <a class="docs" href="javascript:void(0)" onclick="gotoPrivacy();" title="Privacy Policy">Privacy</a>
+        <a class="docs" href="javascript:void(0)" onclick="gotoTerms();" title="Terms of Use">Terms</a>
       </div>
+      <div class="right">
+        &lt;&gt; with ♥ in <a href="https://en.wikipedia.org/wiki/Singapore" target="_blank">Singapore</a>.
+        Powered by <a href="https://pages.github.com" target="_blank">GitHub Pages</a>.
+      </div>
+      <div class="clear"></div>
     </div>
   </body>
   <!-- Start of JavaScript Engine Initialization -->

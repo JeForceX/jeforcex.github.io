@@ -1,19 +1,17 @@
-/* ----------------
+/* --------------
 JeForceX™ Forge
 Role-Playing Game
 JavaScript Engine
----------------- */
+----------------- */
 
-/* -------------
-Player Character
-------------- */
-
-const playerCharacter = {
+const player = {
   profile: {
     firstName: "",
     lastName: "",
     gender: "",
-    alignment: ""
+    race: "",
+    class: "",
+    biography: ""
   },
   ability: {
     STR: 10, // Strength
@@ -21,9 +19,6 @@ const playerCharacter = {
     CON: 10, // Constitution
     WIS: 10, // Wisdom
     INT: 10, // Intelligence
-    CHA: 10 // Charisma
-  },
-  status: {
-    health: 100
+    CHA: 10  // Charisma
   }
 }

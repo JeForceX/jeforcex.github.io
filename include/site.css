@@ -1,10 +1,11 @@
 /* ------------------
 JeForceX™ Forge
+GitHub User Website
 Cascading Style Sheet
------------------- */
+--------------------- */
 
 /* Global Section
--------------- */
+----------------- */
 
 html {
   scroll-behavior: smooth;
@@ -26,336 +27,181 @@ h5 { font-size: 140%; }
 h6 { font-size: 120%; }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0px;
+  font-family: Times New Roman;
   color: #DD2222;
-  padding: 0.5em 0em 0.5em 0em;
-  border-bottom: 1px solid #DDDDDD;
+}
+
+h6 {
+  margin: 1.0em 0em;
 }
 
 p {
+  line-height: 1.2em;
   text-align: justify;
 }
 
 a {
-  color: #DD2222;
+  color: #BB9977;
   text-decoration: none;
 }
 
 a:hover {
-  color: #FF0000;
+  color: #DDBB99;
 }
 
 .clear {
   clear: both;
-}
-
-/* Header Section
--------------- */
-
-#header-wrapper {
-  padding: 0px 10px;
-}
-
-#header-content {
-  width: 1200px;
-  margin: 10px auto;
-}
-
-#site-logo {
-  margin-right: 10px;
-  vertical-align: middle;
-}
-
-#site-name {
-  display: inline;
-  vertical-align: middle;
-  font-size: 40px;
-  color: #bbbbbb;
 }
 
 /* Navigation Section
------------------- */
+--------------------- */
 
-#navigation-wrapper {
-  padding: 0px 10px;
-}
-
-#navigation-content {
-  width: 1200px;
-  margin: 0px auto 10px auto;
-  background-color: #BB2222;
-}
-
-#navigation-content a {
+#site-logo {
   display: inline-block;
-  padding: 8px 16px 8px 16px;
+  margin: 10px 30px 10px 0px;
+  height: 30px;
+  vertical-align: top;
+}
+
+#navigation {
+  min-width: 1200px;
+  position: sticky;
+  top: 0px;
+  padding: 0px 10px;
+  background-color: #000000;
   color: #FFFFFF;
-  font-weight: bold;
-  font-size: 14px;
 }
 
-#navigation-content a:hover {
+#navigation .link {
+  display: inline-block;
+  height: 34px;
+  padding: 16px 16px 0px 16px;
+  font-size: 20px;
+  color: #FFFFFF;
+  vertical-align: top;
+}
+
+#navigation .link:hover {
   background-color: #DD2222;
+  color: #EEEEEE;
 }
 
-/* Content Section
---------------- */
-
-#content-wrapper {
-  padding: 0px 10px;
+#navigation .connect {
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  margin: 10px 0px 0px 10px;
+  background-position: 0px 0px;
 }
 
-#content-container {
-  width: 1200px;
-  margin: 0px auto;
+#navigation .connect:hover {
+  background-position: 0px -30px;
 }
 
-#content-main {
-  display: inline-block;
-  width: 850px;
-  margin-right: 6px;
-  vertical-align: top;
+#facebook { background: url(/assets/facebook.png); }
+#twitter { background: url(/assets/twitter.png); }
+#youtube { background: url(/assets/youtube.png); }
+
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 32px;
+  padding: 18px 0px 0px 0px;
+  border-radius: 50%;
+  background-color: #BB2222;
+  color: #FFFFFF;
+  font-size: 30px;
+  text-align: center;
 }
 
-#content-side {
-  display: inline-block;
-  width: 340px;
-  vertical-align: top;
+#back-to-top:hover {
+  background-color: #DD2222;
+  color: #EEEEEE;
 }
 
 /* Module Section
---------------- */
+----------------- */
 
 .module-wrapper {
-  display: none;
-  margin-bottom: 10px;
+  padding: 40px;
 }
 
-.module-title {
-  display: block;
-  padding: 6px;
-  background-color: #BB2222;
-  color: #FFFFFF;
-  font-size: 120%;
-  font-weight: bold;
-  text-align: center;
+.module-wrapper.primary {
+  background-color: #FFFFFF;
+}
+
+.module-wrapper.secondary {
+  background-color: #F8F8F8;
 }
 
 .module-content {
-  display: block;
-  padding: 10px;
-  background-color: #f0f0f0;
-}
-
-.module-content img {
-  max-width: 100%;
-}
-
-/* Footer Section
--------------- */
-
-#footer-wrapper {
-  padding: 20px 10px 10px 10px;
-  background-color: #222222;
-  border-top: 4px solid #DD2222;
-  color: #FFFFFF;
-}
-
-#footer-content {
   width: 1200px;
   margin: auto;
+  font-size: 24px;
 }
 
-#footer-content a {
-  line-height: 2em;
-  color: #DDBB99;
-}
-
-#footer-content a:hover {
-  color: #FFDDBB;
-}
-
-#footer-content h5 {
-  color: #DD2222;
-  border: 0px;
-  padding-top: 0px;
-}
-
-#footer-logo {
-  display: block;
+.module-content h1, h2, h3, h4, h5, h6 {
   text-align: center;
-}
-
-#footer-module-1 {
-  display: inline-block;
-  width: 320px;
-  margin-right: 40px;
-  vertical-align: top;
-}
-
-#footer-module-2 {
-  display: inline-block;
-  width: 120px;
-  margin-right: 40px;
-  vertical-align: top;
-}
-
-#footer-module-3 {
-  display: inline-block;
-  width: 120px;
-  margin-right: 40px;
-  vertical-align: top;
-}
-
-#footer-module-4 {
-  display: inline-block;
-  width: 120px;
-  vertical-align: top;
 }
 
 /* Legal Section
-------------- */
+---------------- */
 
-#legal-wrapper {
-  padding: 0px 10px;
+#legal {
+  padding: 10px;
   background-color: #000000;
   color: #FFFFFF;
+  min-width: 1200px;
 }
 
-#legal-content {
-  width: 1200px;
-  margin: auto;
-}
-
-#legal-content a {
+legal a {
   color: #DDBB99;
 }
 
-#legal-content a:hover {
+legal a:hover {
   color: #FFDDBB;
 }
 
-#legal-content .left {
+#legal .docs {
+  margin-left: 16px;
+}
+
+#legal .left {
   float: left;
 }
 
-#legal-content .right {
+#legal .right {
   float: right;
+  margin-right: 70px;
 }
 
-#legal-padding {
-  padding: 10px;
+/* Custom Formatting
+-------------------- */
+
+.construction {
+  color: #BBBBBB;
+  text-align: center;
 }
 
-.legal-link {
-  margin-left: 15px;
+.portal {
+  text-align: center;
 }
 
-/* Dashboard Portfolio Cards
-------------------------- */
-
-.dashboard-card {
+.portal-card {
   display: inline-block;
   width: 180px;
-  height: 280px;
-  padding: 10px;
-  margin-right: 6px;
-  border-radius: 20px;
-  background-color: #663399;
-  color: #EEEEEE;
-  font-size: 200%;
-  text-align: center;
-}
-
-.dashboard-card:hover {
-  background-color: #7744AA;
-  color: #FFFFFF;
-}
-
-.dashboard-card div {
-  position: relative;
-  top: 48%;
-}
-
-/* Sidebar Elements
---------------- */
-
-.sidebar-banner {
-  display: block;
-  height: 20px;
-  padding: 30px;
-  margin-bottom: 10px;
-  background-color: #663399;
-  color: #EEEEEE;
-  font-size: 140%;
-  text-align: center;
-}
-
-.sidebar-banner:hover {
-  background-color: #7744AA;
-  color: #FFFFFF
-}
-
-.sidebar-button {
-  display: block;
-  width: 50%;
-  padding: 4px;
-  margin: auto;
-  background-color: #BB2222;
-  border-radius: 8px;
-  border-top: 4px solid #DD2222;
-  border-left: 4px solid #DD2222;
-  border-right: 4px solid #992222;
-  border-bottom: 4px solid #992222;
-  color: #EEEEEE;
-  font-size: 120%;
-  font-weight: bold;
-  text-align: center;
-}
-
-.sidebar-button:hover {
-  background-color: #DD2222;
-  border-top: 4px solid #FF2222;
-  border-left: 4px solid #FF2222;
-  border-right: 4px solid #BB2222;
-  border-bottom: 4px solid #BB2222;
-  color: #FFFFFF;
-}
-
-/* Role-Playing Game Launcher
--------------------------- */
-
-#rpg-logo {
   height: 160px;
-  background-color: #000000;
-  color: #FFBB00;
-  font-family: Times New Roman;
-  font-size: 80px;
-  text-align: center;
+  padding: 130px 10px 10px 10px;
+  border-radius: 10px;
+  background-color: #BB9977;
+  color: #FFFFFF;
+  margin-right: 2.5px;
 }
 
-#rpg-logo div {
-  position: relative;
-  top: 44%;
-}
-
-/* Custom Styles
-------------- */
-
-.clear {
-  clear: both;
-}
-
-.floater {
-  text-align: center;
-}
-
-.table-of-contents {
-  padding: 10px;
-  border: 1px solid #888888;
-}
-
-.under-construction {
-  text-align: center;
-  color: #999999;
+.portal-card:hover {
+  background-color: #DDBB99;
+  color: #EEEEEE;
 }
