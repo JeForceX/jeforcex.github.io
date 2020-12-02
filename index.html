@@ -12,11 +12,10 @@
     <!-- Section: Navigation-->
     <div id="navigation">
       <a href="/"><img id="site-logo" src="assets/logo.png" alt="Logo" title="JeForceX&#153; Forge" /></a>
-        <a class="link" href="#top">Top</a>
-        <a class="link" href="#game">Game</a>
-        <a class="link" href="#guide">Guide</a>
-        <a class="link" href="#network">Network</a>
-        <a class="link" href="#about">About</a>
+        <a class="link" href="#top" onclick="gotoHome();">Home</a>
+        <a class="link" href="#game" onclick="gotoHome();">Game</a>
+        <a class="link" href="#guide" onclick="gotoHome();">Guide</a>
+        <a class="link" href="#about" onclick="gotoHome();">About</a>
         <a id="back-to-top" href="#top" title="Back to Top">^</a>
         <a id="youtube" class="connect" href="https://www.youtube.com/channel/UC1YQ9c5rXyNmfdbT2q8i2Og" target="_blank" title="YouTube"></a>
         <a id="twitter" class="connect" href="https://twitter.com/JeForceXOfficia" target="_blank" title="Twitter"></a>
@@ -26,15 +25,14 @@
     <!-- Module: Forge -->
     <div class="module-wrapper primary" id="forge">
       <div class="module-content">
-        <h2>JeForceX&#153; Forge</h2>
+        <div class="banner-temp">Image Banner<br/>960 x 240</div>
         <p>Welcome to <b>JeForceX&#153; Forge</b>, a GitHub User Website powered by <a href="https://pages.github.com" target="_blank">GitHub Pages</a> which functions as a Proof of Concept Demonstration Website as well as a Web Browser Role-Playing Game.</p>
         <p>Find out more about the Forge works by checking out each respective feature.</p>
         <h6>Select a Destination</h6>
         <div class="portal">
-          <a class="portal-card" href="#game" title="Game">Game</a>
-          <a class="portal-card" href="#guide" title="Guide">Guide</a>
-          <a class="portal-card" href="#network" title="Network">Network</a>
-          <a class="portal-card" href="#about" title="About">About</a>
+          <a class="card" href="#game" title="Game">Game</a>
+          <a class="card" href="#guide" title="Guide">Guide</a>
+          <a class="card last" href="#about" title="About">About</a>
         </div>
       </div>
     </div>
@@ -42,21 +40,52 @@
     <div class="module-wrapper secondary" id="game">
       <div class="module-content">
         <h2>Game</h2>
-        <p class="construction">Under Construction</p>
+        <div class="contention">
+          <div class="banner-temp">Image Banner<br/>960 x 240</div>
+          <div class="left">
+            <h6>Overview</h6>
+            <p>Web Browser Role-Playing Game with Gameplay Elements inspired by <a href="https://dnd.wizards.com" target="_blank">Dungeons &amp; Dragons</a> and Storytelling Elements inspired by <a href="https://fate-go.us" target="_blank">Fate/Grand Order</a>.</p>
+            <h6>Features</h6>
+            <ul>
+              <li>Create and customize a Character of your choice with options ranging from Races and Classes to Skills and Ideologies.</li>
+              <li>Experience Colonial Life in the Era of Space Exploration through World Exploration.</li>
+              <li>Contribute to the growth of the Space-faring Colony by fulfilling requests from various sources.</li>
+              <li>Uncover the deepest and darkest secrets of the universe through the official campaign story.</li>
+            </ul>
+          </div>
+          <div class="right">
+            <h6>Game Launcher</h6>
+            <p>The Role-Playing Game is designed and optimized for the PC Web Browser.</p>
+            <p>If you intend to play on a Mobile Device, consider switching to the Landscape Orientation for the best User Experience.</p>
+            <p>Press the <b>Play Now</b> button to launch the game.</p>
+            <div class="centralize"><a class="button" href="game/">Play Now</a></div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Module: Guide -->
     <div class="module-wrapper primary" id="guide">
       <div class="module-content">
         <h2>Guide</h2>
-        <p class="construction">Under Construction</p>
-      </div>
-    </div>
-    <!-- Module: Network -->
-    <div class="module-wrapper secondary" id="network">
-      <div class="module-content">
-        <h2>Network</h2>
-        <p class="construction">Under Construction</p>
+        <div class="contention">
+          <div class="banner-temp">Image Banner<br/>960 x 240</div>
+          <div class="left">
+            <h6>Overview</h6>
+            <p>The Official Guide provides in-depth information about the Gameplay as well as Storytelling aspects of the Role-Playing Game.</p>
+            <h6>Topics</h6>
+            <ul>
+              <li>The Gameplay Aspect includes topics such as Character Creation, World Exploration, and Missions.</li>
+              <li>The Storytelling Aspect includes topics such as the known Universe, Races, and Civilizations.</li>
+            </ul>
+          </div>
+          <div class="right">
+            <h6>Guide Launcher</h6>
+            <p>The Official Guide is designed and optimized for the PC Web Browser.</p>
+            <p>If you intend to view the guide on a Mobile Device, consider switching to the Landscape Orientation for the best User Experience.</p>
+            <p>Press the <b>View Guide</b> button to launch the game.</p>
+            <div class="centralize"><a class="button" href="guide/">View Guide</a></div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Module: About -->
@@ -66,12 +95,26 @@
         <p class="construction">Under Construction</p>
       </div>
     </div>
+    <!-- Module: Privacy -->
+    <div class="module-wrapper primary" id="privacy">
+      <div class="module-content">
+        <h2>Privacy Policy</h2>
+        <p class="construction">Under Construction</p>
+      </div>
+    </div>
+    <!-- Module: Terms -->
+    <div class="module-wrapper primary" id="terms">
+      <div class="module-content">
+        <h2>Terms of Use</h2>
+        <p class="construction">Under Construction</p>
+      </div>
+    </div>
     <!-- Section: Legal -->
     <div id="legal">
       <div class="left">
         &#169; Copyright <span id="jfx_copyright_year"></span> JeForceX™. All rights reserved.
-        <a class="docs" href="javascript:void(0)" onclick="gotoPrivacy();" title="Privacy Policy">Privacy</a>
-        <a class="docs" href="javascript:void(0)" onclick="gotoTerms();" title="Terms of Use">Terms</a>
+        <a class="docs" href="#top" onclick="gotoPrivacy();" title="Privacy Policy">Privacy</a>
+        <a class="docs" href="#top" onclick="gotoTerms();" title="Terms of Use">Terms</a>
       </div>
       <div class="right">
         &lt;&gt; with ♥ in <a href="https://en.wikipedia.org/wiki/Singapore" target="_blank">Singapore</a>.
