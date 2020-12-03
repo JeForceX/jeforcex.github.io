@@ -85,11 +85,12 @@ function gotoTerms() {
 ------------------------- */
 
 // Functions to be Executed during Development System Boot
+/*
 mod_list_hide();
 mod_privacy.style.display = "block";
+*/
 
 // Functions to be Executed during Production System Boot
-/*
+
 mod_privacy.style.display = "none";
 mod_terms.style.display = "none";
-*/
