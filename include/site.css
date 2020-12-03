@@ -19,6 +19,13 @@ body {
   line-height: 1.5em;
 }
 
+hr {
+  height: 1px;
+  margin: 40px 0px;
+  border: 0px;
+  background-color: #DDDDDD;
+}
+
 h1 {font-size: 220%;}
 h2 {font-size: 200%;}
 h3 {font-size: 180%;}
@@ -36,22 +43,22 @@ h6 {
   margin: 1.0em 0em;
 }
 
-div, p, li {
+div, p {
   line-height: 1.2em;
   text-align: justify;
 }
 
 li {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 a {
-  color: #DD2222;
+  color: #BB9977;
   text-decoration: none;
 }
 
 a:hover {
-  color: #FF2222;
+  color: #DDBB99;
   text-decoration: underline;
 }
 
@@ -158,6 +165,10 @@ a:hover {
   font-size: 24px;
 }
 
+.module-content.legal {font-size: 12px;}
+.module-content.legal h2 {text-align: left;}
+.module-content.legal h4 {text-align: left;}
+
 /* Content Section
 ------------------ */
 
@@ -247,6 +258,21 @@ a:hover {
   background-color: #DD2222;
   color: #EEEEEE;
   text-decoration: none;
+}
+
+.table-of-contents {
+  display: inline-block;
+  padding: 20px 20px 10px 20px;
+  margin-top: 10px;
+  border: 1px solid #DDDDDD;
+}
+
+.table-of-contents h4 {
+  margin: 0px;
+}
+
+.table-of-contents ol {
+  padding: 0em 1.5em;
 }
 
 /* Legal Section

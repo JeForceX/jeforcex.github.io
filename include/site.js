@@ -10,8 +10,18 @@ JavaScript Engine
 // Write Current Year to Copyright Notice
 const current_date = new Date();
 const current_year = current_date.getFullYear();
-const jfx_copyright_year = document.getElementById("jfx_copyright_year");
-jfx_copyright_year.innerHTML = current_year;
+const site_copyright_year = document.getElementById("site_copyright_year");
+site_copyright_year.innerHTML = current_year;
+
+// Write Website Address to Privacy Policy
+const site_address = document.getElementById("site_address");
+const site_address_url = window.location.protocol + "//" + window.location.hostname;
+site_address.innerHTML = "<a href='" + site_address_url + "' target='_blank'>" + site_address_url + "</a>";
+
+// Write Game Address to Privacy Policy
+const game_address = document.getElementById("game_address");
+const game_address_url = site_address_url + "/game/";
+game_address.innerHTML = "<a href='" + game_address_url + "' target='_blank'>" + game_address_url + "</a>";
 
 /* Module Controller
 -------------------- */
@@ -49,7 +59,7 @@ function mod_list_hide() {
 }
 
 /* Navigation Controller
--------------------- */
+------------------------ */
 
 function gotoHome() {
   mod_list_show();
@@ -74,6 +84,12 @@ function gotoTerms() {
 /* System Boot Controller
 ------------------------- */
 
-// Functions to be Executed during System Boot
+// Functions to be Executed during Development System Boot
+mod_list_hide();
+mod_privacy.style.display = "block";
+
+// Functions to be Executed during Production System Boot
+/*
 mod_privacy.style.display = "none";
 mod_terms.style.display = "none";
+*/
