@@ -59,7 +59,7 @@ a:hover {
   clear: both;
 }
 
-/* Navigation Section
+/* Trademark Section
 --------------------- */
 
 #site-logo {
@@ -68,6 +68,13 @@ a:hover {
   height: 30px;
   vertical-align: top;
 }
+
+/* #site-logo-about {
+
+} */
+
+/* Navigation Section
+--------------------- */
 
 #navigation {
   min-width: 1200px;
@@ -154,6 +161,7 @@ a:hover {
 /* Content Section
 ------------------ */
 
+/* Remove this Code Snippet when it is no longer required */
 .banner-temp {
   width: 960px;
   height: 140px;
@@ -191,6 +199,7 @@ a:hover {
   text-align: center;
 }
 
+/* Remove this Code Snippet when it is no longer required */
 .construction {
   color: #BBBBBB;
   text-align: center;
@@ -201,16 +210,16 @@ a:hover {
 
 .contention .left {
   display: inline-block;
-  width: 574px;
-  padding-right: 20px;
-  margin-right: 20px;
+  width: 564px;
+  padding-right: 30px;
+  margin-right: 30px;
   border-right: 1px solid #DDDDDD;
   vertical-align: top;
 }
 
 .contention .right {
   display: inline-block;
-  width: 574px;
+  width: 564px;
   vertical-align: top;
 }
 
