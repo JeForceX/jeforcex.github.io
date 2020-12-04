@@ -13,15 +13,16 @@ const current_year = current_date.getFullYear();
 const site_copyright_year = document.getElementById("site_copyright_year");
 site_copyright_year.innerHTML = current_year;
 
-// Write Website Address to Privacy Policy
-const site_address = document.getElementById("site_address");
+// Define Website & Game Addresses
 const site_address_url = window.location.protocol + "//" + window.location.hostname;
-site_address.innerHTML = "<a href='" + site_address_url + "' target='_blank'>" + site_address_url + "</a>";
+const site_address = "<a href='" + site_address_url + "' target='_blank'>" + site_address_url + "</a>";
+const game_address = "<a href='" + site_address_url + "/game/" + "' target='_blank'>" + site_address_url + "/game/" + "</a>";
 
-// Write Game Address to Privacy Policy
-const game_address = document.getElementById("game_address");
-const game_address_url = site_address_url + "/game/";
-game_address.innerHTML = "<a href='" + game_address_url + "' target='_blank'>" + game_address_url + "</a>";
+// Write Website & Game Addresses to Legal Documents
+document.getElementById("site_address_privacy").innerHTML = site_address;
+document.getElementById("game_address_privacy").innerHTML = game_address;
+document.getElementById("site_address_terms").innerHTML = site_address;
+document.getElementById("game_address_terms").innerHTML = game_address;
 
 /* Module Controller
 -------------------- */
@@ -84,13 +85,6 @@ function gotoTerms() {
 /* System Boot Controller
 ------------------------- */
 
-// Functions to be Executed during Development System Boot
-/*
-mod_list_hide();
-mod_privacy.style.display = "block";
-*/
-
-// Functions to be Executed during Production System Boot
-
+// Functions to be Executed during System Boot
 mod_privacy.style.display = "none";
 mod_terms.style.display = "none";
