@@ -3,18 +3,24 @@
   <head>
     <title>JeForceX&#153; Forge: The Role-Playing Game</title>
     <link rel="stylesheet" href="include/game.css">
+    <link rel="icon" type="image/png" href="../assets/favicon.png" />
     <meta charset="UTF-8">
   </head>
-  <body onresize="ui_dialog_refresh();">
-    Hello World
-    <div class="dialog" id="ui_dialog_window">
-      <div class="title" id="ui_dialog_title">System Message</div>
-      <div class="content">
-        <p id="ui_dialog_content">The game is currently under construction.</p>
-        <a class="button" href="../" id="ui_dialog_button">Return to Website</a>
-      </div>
-    </div>
-    
+  <body onresize="ui_refresh();">
+    <!-- Module: Core -->
+    <div id="mod-core">
+      <!-- Module: Main Menu -->
+      <div id="mod-main">
+        <!-- UI: Dialog -->
+        <div class="dialog" id="ui_dialog_window">
+          <div class="title" id="ui_dialog_title">System Message</div>
+          <div class="content">
+            <p id="ui_dialog_content">The game is currently under construction.</p>
+            <a class="button" href="../" id="ui_dialog_button">Return to Website</a>
+          </div>
+        </div> <!-- End of UI: Dialog -->
+      </div> <!-- End of Module: Main Menu -->
+    </div> <!-- End of Module: Core -->
   </body>
   <!-- Start of JavaScript Engine -->
   <script src="include/game.js"></script>

@@ -11,8 +11,8 @@
     <div id="top"></div>
     <!-- Section: Navigation-->
     <div id="navigation">
-      <a href="/"><img id="site-logo" src="assets/logo.png" alt="Logo" title="JeForceX&#153; Forge" /></a>
-        <a class="link" href="#top" onclick="gotoHome();">Home</a>
+      <a id="site-logo-navigation" href="/" alt="Logo" title="JeForceX&#153; Forge" /></a>
+        <a class="link" href="#top" onclick="gotoHome();">Portal</a>
         <a class="link" href="#game" onclick="gotoHome();">Game</a>
         <a class="link" href="#guide" onclick="gotoHome();">Guide</a>
         <a class="link" href="#about" onclick="gotoHome();">About</a>
@@ -22,26 +22,25 @@
         <a id="facebook" class="connect" href="https://www.facebook.com/JeForceXOfficial" target="_blank" title="Facebook"></a>
         <div class="clear"></div>
     </div>
-    <!-- Module: Forge -->
-    <div class="module-wrapper primary" id="forge">
+    <!-- Module: Portal -->
+    <div class="module-wrapper" id="portal">
       <div class="module-content">
-        <div class="banner-temp">Image Banner<br/>960 x 240</div>
+        <div id="site-logo-portal"></div>
         <p>Welcome to JeForceX&#153; Forge (the "<b>Forge</b>"), a GitHub User Website powered by <a href="https://pages.github.com" target="_blank">GitHub Pages</a> which functions as a Proof of Concept Demonstration Website as well as a Web Browser Role-Playing Game with User Documentation.</p>
         <p>Explore the Forge by checking out the respective sections.</p>
         <h6>Select a Destination</h6>
         <div class="portal">
-          <a class="card" href="#game" title="Game">Game</a>
-          <a class="card" href="#guide" title="Guide">Guide</a>
-          <a class="card last" href="#about" title="About">About</a>
+          <a class="game" href="#game" title="The Role-Playing Game"></a>
+          <a class="guide" href="#guide" title="The Official Guide"></a>
+          <a class="about" href="#about" title="About"></a>
         </div>
       </div>
     </div>
     <!-- Module: Game -->
-    <div class="module-wrapper secondary" id="game">
+    <div class="module-wrapper game" id="game">
       <div class="module-content">
-        <h2>Game</h2>
         <div class="contention">
-          <div class="banner-temp">Image Banner<br/>960 x 240</div>
+          <div class="centralize"><img class="module-banner" src="assets/game-logo.png"/></div>
           <div class="left">
             <h6>Overview</h6>
             <p>Web Browser Role-Playing Game with Gameplay Elements inspired by <a href="https://dnd.wizards.com" target="_blank">Dungeons &amp; Dragons</a> and Storytelling Elements inspired by <a href="https://fate-go.us" target="_blank">Fate/Grand Order</a>.</p>
@@ -64,17 +63,16 @@
       </div>
     </div>
     <!-- Module: Guide -->
-    <div class="module-wrapper primary" id="guide">
+    <div class="module-wrapper guide" id="guide">
       <div class="module-content">
-        <h2>Guide</h2>
         <div class="contention">
-          <div class="banner-temp">Image Banner<br/>960 x 240</div>
+          <div class="centralize"><img class="module-banner" src="assets/guide-logo.png"/></div>
           <div class="left">
             <h6>Overview</h6>
             <p>The Official Guide provides in-depth information about the Gameplay as well as Storytelling aspects of the Role-Playing Game.</p>
             <h6>Topics</h6>
             <ul>
-              <li>The Gameplay Aspect includes topics such as Character Creation, World Exploration, and Missions.</li>
+              <li>The Gameplay Aspect includes topics such as Character, Exploration, and Missions.</li>
               <li>The Storytelling Aspect includes topics such as the known Universe, Races, and Civilizations.</li>
             </ul>
           </div>
@@ -82,19 +80,19 @@
             <h6>Guide Launcher</h6>
             <p>The Official Guide is designed and optimized for the PC Web Browser.</p>
             <p>If you intend to view the guide on a Mobile Device, consider switching to the Landscape Orientation for the best User Experience.</p>
-            <p>Press the <b>View Guide</b> button to launch the game.</p>
+            <p>Press the <b>View Guide</b> button to launch the guide.</p>
             <div class="centralize"><a class="button" href="guide/">View Guide</a></div>
           </div>
         </div>
       </div>
     </div>
     <!-- Module: About -->
-    <div class="module-wrapper secondary" id="about">
+    <div class="module-wrapper" id="about">
       <div class="module-content">
-        <h2>About</h2>
-        <div class="contention">
+        <div class="contention about">
           <div class="left">
-            <div class="centralize"><img src="assets/logo.png" id="site-logo-about" /></div>
+            <h6>About JeForceX&#153; Forge</h6>
+            <div id="site-logo-about"></div>
             <p>JeForceX&#153; Forge (the "<b>Forge</b>") is a GitHub User Website powered by GitHub Pages which functions as a Proof of Concept Demonstration Website as well as a Web Browser Role-Playing Game with User Documentation.</p>
             <p>The Forge is coded from scratch and built upon the HyperText Markup Language ("<b>HTML</b>"), Cascading Style Sheet ("<b>CSS</b>"), and JavaScript ("<b>JS</b>") technologies.</p>
           </div>

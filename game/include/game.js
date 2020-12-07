@@ -1,8 +1,15 @@
-/* --------------
+/* ------------------
 JeForceX™ Forge
-Role-Playing Game
+The Role-Playing Game
 JavaScript Engine
------------------ */
+--------------------- */
+
+/* Section: Module Controller
+----------------------------- */
+
+// Define Modules
+const mod_core = document.getElementById("mod-core");
+const mod_main = document.getElementById("mod-main");
 
 /* Section: User Interface
 -------------------------- */
@@ -16,7 +23,11 @@ const ui_dialog = {
 }
 
 // Set Dialog Position to Center of Screen
-function ui_dialog_refresh() {
+function ui_refresh() {
+  // Module: Core
+  mod_core.style.height = window.innerHeight + "px";
+  mod_core.style.backgroundSize = window.innerWidth + "px";
+  // User Interface: Dialog Message
   ui_dialog.window.style.top = ((window.innerHeight - ui_dialog.window.clientHeight) * 0.5) + "px";
   ui_dialog.window.style.left = ((window.innerWidth - ui_dialog.window.clientWidth) * 0.5) + "px";
 }
@@ -58,4 +69,4 @@ const player = { // Player Character
 /* Section: System Boot
 ----------------------- */
 
-ui_dialog_refresh(); // Set Dialog Position to Center of Screen
+ui_refresh(); // Refresh all User Interface Element

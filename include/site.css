@@ -69,14 +69,32 @@ a:hover {
 /* Trademark Section
 --------------------- */
 
-#site-logo {
+#site-logo-navigation {
   display: inline-block;
   margin: 10px 30px 10px 0px;
+  width: 124px;
   height: 30px;
+  background-image: url(/assets/site-logo.png);
+  background-size: 124px;
+  background-position: 0px -30px;
   vertical-align: top;
 }
 
-/* #site-logo-about {height: 80px;} */
+#site-logo-navigation:hover {background-position: 0px 0px;}
+
+#site-logo-portal {
+  width: 600px;
+  height: 144px;
+  margin: 0px auto 40px auto;
+  background-image: url(/assets/site-logo.png);
+}
+#site-logo-about {
+  width: 444px;
+  height: 106px;
+  margin: auto;
+  background-image: url(/assets/site-logo.png);
+  background-size: 444px;
+}
 
 /* Navigation Section
 --------------------- */
@@ -149,13 +167,8 @@ a:hover {
   padding: 50px;
 }
 
-.module-wrapper.primary {
-  background-color: #FFFFFF;
-}
-
-.module-wrapper.secondary {
-  background-color: #F8F8F8;
-}
+.module-wrapper.game {background-color: #FFF8F8;}
+.module-wrapper.guide {background-color: #F8F4FF;}
 
 .module-content {
   width: 1200px;
@@ -166,20 +179,10 @@ a:hover {
 .module-content.legal {font-size: 12px;}
 .module-content.legal h2 {text-align: left;}
 .module-content.legal h4 {text-align: left;}
+.module-banner {margin: 40px 0px;}
 
 /* Content Section
 ------------------ */
-
-/* Remove this Code Snippet when it is no longer required */
-.banner-temp {
-  width: 960px;
-  height: 140px;
-  padding-top: 100px;
-  margin: 0px auto 40px auto;
-  background-color: #888888;
-  color: #FFFFFF;
-  text-align: center;
-}
 
 .button {
   margin: auto;
@@ -226,30 +229,60 @@ a:hover {
   vertical-align: top;
 }
 
+.contention.about {
+  padding-top: 40px;
+}
+
 .portal {
   text-align: center;
 }
 
-.portal .card {
+.portal .game {
   display: inline-block;
-  width: 180px;
-  height: 160px;
-  padding: 130px 10px 10px 10px;
+  width: 200px;
+  height: 300px;
+  border: 2px solid #C82020;
   border-radius: 10px;
-  background-color: #888888;
-  color: #FFFFFF;
-  font-weight: bold;
+  background-image: url(/assets/portal-game.jpg);
+  background-position: 0px 0px;
   margin-right: 2.5px;
 }
 
-.portal .card.last {
-  margin-right: 0px;
+.portal .game:hover {
+  border: 2px solid #DD2324;
+  background-position: 200px 0px;
 }
 
-.portal .card:hover {
-  background-color: #DD2222;
-  color: #EEEEEE;
-  text-decoration: none;
+.portal .guide {
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+  border: 2px solid #7434C9;
+  border-radius: 10px;
+  background-image: url(/assets/portal-guide.jpg);
+  background-position: 0px 0px;
+  margin-right: 2.5px;
+}
+
+.portal .guide:hover {
+  border: 2px solid #8039E1;
+  background-position: 200px 0px;
+}
+
+.portal .about {
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+  border: 2px solid #A98A6B;
+  border-radius: 10px;
+  background-image: url(/assets/portal-about.jpg);
+  background-position: 0px 0px;
+  margin-right: 2.5px;
+}
+
+.portal .about:hover {
+  border: 2px solid #BB9976;
+  background-position: 200px 0px;
 }
 
 .table-of-contents {

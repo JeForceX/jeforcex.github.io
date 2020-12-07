@@ -28,7 +28,7 @@ document.getElementById("game_address_terms").innerHTML = game_address;
 -------------------- */
 
 // Individual Modules
-const mod_forge = document.getElementById("forge");
+const mod_portal = document.getElementById("portal");
 const mod_game = document.getElementById("game");
 const mod_guide = document.getElementById("guide");
 const mod_about = document.getElementById("about");
@@ -37,7 +37,7 @@ const mod_terms = document.getElementById("terms");
 
 // List of ALL Modules
 const mod_list = [
-  mod_forge,
+  mod_portal,
   mod_game,
   mod_guide,
   mod_about,
@@ -56,6 +56,13 @@ function mod_list_show() {
 function mod_list_hide() {
   for (i = 0; i < mod_list.length; i++) {
     mod_list[i].style.display = "none";
+  }
+}
+
+// Auto Resize Section Modules
+function mod_list_resize() {
+  for (i = 0; i < 3; i++) {
+    mod_list[i].style.paddingBottom = (window.innerHeight - (mod_list[i].clientHeight - (mod_list[i].style.padding * 2) - 50)) + "px";
   }
 }
 
@@ -88,3 +95,4 @@ function gotoTerms() {
 // Functions to be Executed during System Boot
 mod_privacy.style.display = "none";
 mod_terms.style.display = "none";
+mod_list_resize();

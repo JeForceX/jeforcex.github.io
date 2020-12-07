@@ -1,6 +1,6 @@
-/* --------------
+/* ------------------
 JeForceX™ Forge
-Role-Playing Game
+The Role-Playing Game
 Cascading Style Sheet
 --------------------- */
 
@@ -23,9 +23,21 @@ a {
   text-decoration: none;
 }
 
+/* Module Section
+----------------- */
+
+#mod-core {
+  display: inline-block;
+  min-width: 1280px;
+  background-image: url(/game/assets/environment/galaxy.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 /* User Interface Section
 ------------------------- */
 
+/* Dialog Message: Free Format */
 .dialog {
   position: fixed;
   max-width: 50%;

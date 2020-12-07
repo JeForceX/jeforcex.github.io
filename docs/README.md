@@ -1,5 +1,7 @@
 # JeForceX™ Forge
 
+<div style="text-align: center"><img src="logo.png"/></div>
+
 ## Overview
 [JeForceX™ Forge](https://jeforcex.github.io) (the "**Forge**") is a GitHub User Website powered by [GitHub Pages](https://pages.github.com) which functions as a Proof of Concept Demonstration Website as well as a Web Browser Role-Playing Game with User Documentation. The Forge is coded from scratch and built upon the HyperText Markup Language ("**HTML**"), Cascading Style Sheets ("**CSS**"), and JavaScript ("**JS**") technologies.
 
