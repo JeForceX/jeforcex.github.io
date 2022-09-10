@@ -1,3 +1,2 @@
 # Princess Connect! Re:Dive Wiki Tools
-
-## To Be Developed
+To Be Developed
