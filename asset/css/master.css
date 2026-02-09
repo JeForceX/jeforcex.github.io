@@ -79,15 +79,6 @@ SITE CONTENT
 
 .view-limiter { width: 62%; text-align: center; }
 
-@media (max-width: 1000px) {
-  .view-port { align-items: start; }
-  .view-limiter { margin-top: 2rem; min-width: 84vw; }
-  .widget { min-width: 100%; }
-  .logo { min-width: 62vw; }
-  .tagline { font-size: 120%; }
-  .footer {min-width: 100%; }
-}
-
 .widget {
   display: inline-block;
   width: 62%;
@@ -138,4 +129,13 @@ SITE CONTENT
   }
   .copyright { padding: 0.4rem; }
   .coded { color: teal; font-weight: bold; }
+}
+
+@media (max-width: 1000px) {
+  .view-port { align-items: start; }
+  .view-limiter { margin-top: 2rem; min-width: 84vw; }
+  .widget { min-width: 100%; }
+  .logo { min-width: 62vw; }
+  .tagline { font-size: 1.6rem; }
+  .footer {min-width: 100%; }
 }
