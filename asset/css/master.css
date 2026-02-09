@@ -84,6 +84,7 @@ SITE CONTENT
   .view-limiter { margin-top: 2rem; min-width: 84vw; }
   .widget { min-width: 100%; }
   .logo { min-width: 62vw; }
+  .tagline { font-size: 120%; }
   .footer {min-width: 100%; }
 }
 
