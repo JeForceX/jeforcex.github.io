@@ -24,12 +24,12 @@ BASE PARAMETER
 ----------- */
 
 :root {
-  --primary: hsl(270, 100%, 47%);
-  --primary-l1: hsl(270, 93%, 51%);
-  --primary-l2: hsl(270, 86%, 55%);
-  --primary-l3: hsl(270, 79%, 59%);
-  --primary-l4: hsl(270, 74%, 64%);
-  --primary-d1: hsl(270, 60%, 32%);
+  --primary: #7800f0;
+  --primary-l1: #820ef6;
+  --primary-l2: #8c2aef;
+  --primary-l3: #9644e9;
+  --primary-l4: #a35fe7;
+  --primary-d1: #522183;
   --secondary: teal;
   --gray: #f0f0f0;
   --gray-d1: #dedede;
