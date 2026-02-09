@@ -1,0 +1,115 @@
+/* -------------------------------------------------------------
+PRODUCT : JΞFØRCΞX GitHub Pages Site
+WHAT    : Master Style Sheet
+WHY     : Consistent User Experience (UX) across the Website
+------------------------------------------------------------- */
+
+/* --------------
+EXTERNAL RESOURCE
+-------------- */
+
+/* Font Awesome */
+@import url('./all.min.css');
+
+/* Roboto Slab Font
+Copyright 2015 Google Inc. All Rights Reserved.
+Licensed under the Apache License, Version 2.0 */
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url(../webfonts/roboto-slab/roboto-slab.woff2);
+}
+
+/* -----------
+BASE PARAMETER
+----------- */
+
+:root {
+  --primary: #7800f0;
+  --primary-l1: #820ff5;
+  --primary-d1: #6e09d3;
+  --secondary: teal;
+  --gray: #f0f0f0;
+  --gray-d1: #dedede;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto Slab', sans-serif;
+  background-color: #fafafa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-family: 'Roboto Slab', serif;
+  color: var(--primary);
+}
+
+h1 { font-size: 220%; }
+h2 { font-size: 200%; }
+h3 { font-size: 180%; }
+h4 { font-size: 160%; }
+h5 { font-size: 140%; }
+h6 { font-size: 120%; }
+
+p { margin: 0; margin-bottom: 1rem; }
+
+a { color: var(--primary); text-decoration: none; }
+
+/* ---------
+SITE CONTENT
+--------- */
+
+.view-port {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.view-limiter {
+  width: 62%;
+  height: 62%;
+  text-align: center;
+  border: 1px dashed var(--secondary);
+}
+
+.widget {
+  display: inline-block;
+  width: 62%;
+  .wg-header {
+    padding: 0.4rem;
+    background-color: var(--primary);
+    border: 1px solid var(--primary-d1);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    color: white;
+    font-weight: bold;
+  }
+  .wg-body {
+    padding: 1rem;
+    background-color: var(--gray);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    text-align: justify;
+  }
+}
+
+.logo { width: 40vw; height: auto; }
+.tagline { margin: 1rem 0 2rem 0; font-size: 2rem; color: #9e9e9e; }
+
+.connect {
+  text-align: center;
+  .cn-title { font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem; }
+}
+
+.footer {
+  display: inline-block;
+  width: 62%;
+  padding: 0.2rem;
+  background-color: var(--gray);
+  border: 1px solid var(--gray-d1);
+}
