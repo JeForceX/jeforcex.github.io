@@ -9,14 +9,14 @@ EXTERNAL RESOURCE
 -------------- */
 
 /* Font Awesome */
-@import url('./all.min.css');
+@import url('./all.css');
 
 /* Roboto Slab Font
 Copyright 2015 Google Inc. All Rights Reserved.
 Licensed under the Apache License, Version 2.0 */
 @font-face {
   font-family: 'Roboto Slab';
-  src: url(../webfonts/roboto-slab/roboto-slab.woff2);
+  src: url(../font/roboto-slab/roboto-slab.woff2);
 }
 
 /* -----------
